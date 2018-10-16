@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    // this.toDo={}
+    this.message = 'jogging';
+  }
+  @Input() message: string;
 
   ngOnInit() {
   }
 
+  clickMe = (v) => {
+    alert(v);
+  }
 }

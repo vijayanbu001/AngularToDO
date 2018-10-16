@@ -12,8 +12,4 @@ export class ToDoComponent implements OnInit {
   ngOnInit() {
   }
 
-  clickMe = (v) => {
-    alert(v)
-  }
-
 }
